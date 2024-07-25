@@ -1,10 +1,10 @@
 import mongoose  from "mongoose";
 import {} from "dotenv/config";
 
-const urlExterne = process.env.MONGODB_URI_EXTERNE;
-const urlLocal = process.env.MONGODB_URI_LOCAL;
+const urlExterne = process.env.MONGODB_URI_HEBERGE;
+const urlCloud = process.env.MONGODB_URI_CLOUD;
 
-const url = urlLocal;
+const url = urlCloud;
 
 const connectionMongodb = mongoose.connect(url)
 .then((res) => {

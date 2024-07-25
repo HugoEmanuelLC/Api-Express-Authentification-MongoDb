@@ -40,7 +40,6 @@ const verifAuth = async (req, res, next) => {
 
         Users.findOne({ _id: decodedToken.userId })
         .then(() => {
-            res.status(200).json({message: 'Request authorized'});
             next();
         })
         .catch(() => {
