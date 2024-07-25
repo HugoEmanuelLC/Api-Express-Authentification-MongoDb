@@ -12,6 +12,15 @@
     MONGODB_URI_HEBERGE = "mongodb://<username>:<password>@<url-access>/<DBname>?authSource=admin"
 ```
 
+###### fichier src/mongoDB/mongoDBconfig.js
+
+```js
+    const urlExterne = process.env.MONGODB_URI_HEBERGE;
+    const urlCloud = process.env.MONGODB_URI_CLOUD;
+// choix de la variable ici
+    const url = urlCloud;
+```
+
 ##### Terminal
 
 * npm install
