@@ -1,8 +1,8 @@
 import mongoose  from "mongoose";
 import {} from "dotenv/config";
 
-const urlExterne = process.env.MONGODB_URI_HEBERGE;
 const urlCloud = process.env.MONGODB_URI_CLOUD;
+const urlSelfHosted = process.env.MONGODB_URI_SELF_HOSTED;
 
 const url = urlCloud;
 
